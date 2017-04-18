@@ -2,17 +2,17 @@ package org.joyofcoding.objectcalisthenics.assertions;
 
 import org.assertj.core.api.AbstractIterableAssert;
 import org.assertj.core.api.Assertions;
-import org.joyofcoding.objectcalisthenics.Item;
+import org.joyofcoding.objectcalisthenics.item;
 
 import static org.assertj.core.api.Assertions.extractProperty;
 
-public class ItemsAssert extends AbstractIterableAssert<ItemsAssert, Iterable<Item>, Item> {
+public class ItemsAssert extends AbstractIterableAssert<ItemsAssert, Iterable<item>, item> {
 
-    protected ItemsAssert(Iterable<Item> actual) {
+    protected ItemsAssert(Iterable<item> actual) {
         super(actual, ItemsAssert.class);
     }
 
-    public static ItemsAssert assertThat(Iterable<Item> actual) {
+    public static ItemsAssert assertThat(Iterable<item> actual) {
         return new ItemsAssert(actual);
     }
 
